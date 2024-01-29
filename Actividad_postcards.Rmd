@@ -40,7 +40,7 @@ Postcards incluye cinco plantillas: Jolla, Jolla Blue, Trestles, Onofre y Solana
 
 Para comenzar a personalizar una de estas plantillas, debes crear un nuevo proyecto.
 
-## Crear un nuevo proyecto 
+## Crear un nuevo proyecto en RStudio (selección interactiva)
 
 Si usas RStudio: 
 
@@ -53,16 +53,31 @@ Selecciona "Create Project" después de elegir un nombre para la carpeta que con
 - Un documento R Markdown con el contenido de tu sitio
 - Una foto de muestra que debes reemplazar"
 
-O directamente (Tambibién en RStudio):
+
+## Crear un nuevo proyecto
 
 ```{r}
 
-## Crear  un nuevo proyecto en RStudio
+## Crear  un nuevo proyecto 
 usethis::create_project("Su_Usuario.github.io")
 
+```
+
 ## Configurar Git y GitHub
-usethis::use_git()
+
+Para poder guardar los cambios es necesario configurar Git y GitHub
+
+```{r}
+
+## Configurar Git y GitHub
+usethis::use_git() # Reiniciar la sesión
 usethis::use_github()
+
+```
+
+## Elegir un templado
+
+```{r}
 
 ## Elegir solo un template (el que más te guste)
 postcards::create_postcard(template = "jolla")
@@ -86,7 +101,7 @@ Para compilar el archivo HTML autocontenido para el sitio:
 
 - En RStudio puedes utilizar el botón "Knit"
 
-o directamente (Tambibién en RStudio):
+o directamente:
 
 ```{r}
 
