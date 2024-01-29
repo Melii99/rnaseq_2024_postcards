@@ -1,29 +1,34 @@
 ---
-title: "Actividad_Postcards"
+title: "Postcards"
 output: github_document
 ---
 
-# Postcards
+rnaseq_LCG-UNAM_2024
 
-## postcards: Create Beautiful, Simple Personal Websites
-## A collection of R Markdown templates for creating simple and easy to personalize single page websites.
+Curso introductorio de RNA-seq para LCG-UNAM Feb 2024
+
+Actividad postcards
+
+30/01/2024
+
+## Create Beautiful, Simple Personal Websites
+
+A collection of R Markdown templates for creating simple and easy to personalize single page websites.
 
 "El objetivo del paquete es facilitar que cualquier persona pueda crear un sitio web personal de una sola página con un documento R Markdown."
 
-Autor:
-Sean Kross  [aut, cre]
+- Autor: Sean Kross  [aut, cre]
 
-Maintainer:
-Sean Kross <sean at seankross.com>
+- Maintainer: Sean Kross <sean at seankross.com>
 
-[Page: https://CRAN.R-project.org/package=postcards](https://CRAN.R-project.org/package=postcards){:target="_blank"}
+- [Page: https://CRAN.R-project.org/package=postcards](https://CRAN.R-project.org/package=postcards)
 
-[GitHub: https://github.com/seankross/postcards](https://github.com/seankross/postcards){:target="_blank"}
+- [GitHub: https://github.com/seankross/postcards](https://github.com/seankross/postcards)
 
 
 ## Instalación
 
-```{r}
+```{r, eval=FALSE}
 
 ## Puedes instalar Postcards con el siguiente comando:
 install.packages("postcards")
@@ -49,16 +54,18 @@ Si usas RStudio:
 - Ingresar un nombre de directorio para tu proyecto en RStudio ("Tu_Usuario.github.io")
 - Elegir una de las plantillas desde un menú desplegable
 
-Selecciona "Create Project" después de elegir un nombre para la carpeta que contendrá tu sitio. Esta carpeta contendrá dos archivos importantes: 
+Selecciona "Create Project" después de elegir un nombre para la carpeta que contendrá tu sitio. 
+Esta carpeta contendrá dos archivos importantes: 
+
 - Un documento R Markdown con el contenido de tu sitio
 - Una foto de muestra que debes reemplazar"
 
 
 ## Crear un nuevo proyecto
 
-```{r}
+```{r, eval=FALSE}
 
-## Crear  un nuevo proyecto 
+## Crearun nuevo proyecto 
 usethis::create_project("Su_Usuario.github.io")
 
 ```
@@ -67,7 +74,7 @@ usethis::create_project("Su_Usuario.github.io")
 
 Para poder guardar los cambios es necesario configurar Git y GitHub
 
-```{r}
+```{r, eval=FALSE}
 
 ## Configurar Git y GitHub
 usethis::use_git() # Reiniciar la sesión
@@ -77,7 +84,7 @@ usethis::use_github()
 
 ## Elegir un templado
 
-```{r}
+```{r, eval=FALSE}
 
 ## Elegir solo un template (el que más te guste)
 postcards::create_postcard(template = "jolla")
@@ -103,7 +110,7 @@ Para compilar el archivo HTML autocontenido para el sitio:
 
 o directamente:
 
-```{r}
+```{r, eval=FALSE}
 
 ## Desplegar la página GitHub
 rmarkdown::render("index.Rmd")
